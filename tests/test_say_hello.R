@@ -17,7 +17,9 @@ test_that("say_hello throws error when no argument is provided", {
   expect_error(say_hello(), "Please include a name as a character string for me to greet!")
 })
 
+
 # # ----- same as above, but not best practice; keep tests small ----
+# # ----- If fails, would not know what failed - numeric vs nothing  ----
 # test_that("testing say_hello()", {
 #   expect_output(say_hello("Sam"), "Hello Sam!")
 #   expect_error(say_hello(), "Please include a name as a character string for me to greet!")
